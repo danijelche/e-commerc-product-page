@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  
+</head>
+<body>
+	<main>
+	  <header>
+		<nav>
+		  <div class="title">
+		    <img class="menu-icon"src="./images/icon-menu.svg" alt="Menu icon"/>
+			
+			<h3>sneakers</h3>
+		  <ul class="nav-links">
+		  <img class="close-icon" src="./images/icon-close.svg" alt="Close icon">
+			<li href="#">Collections</li>
+			<li href="#">Man</li>
+			<li href="#">Women</li>
+			<li href="#">About</li>
+			<li href="#">Contact</li>		  
+		  </ul>
+		  </div>
+		  <div class="profile">
+		    <img class="cart-icon" src="./images/icon-cart.svg" alt="Cart icon" />
+			<p class="cart-icon-counter">0</p>
+			<img class="avatar-icon" src="./images/image-avatar.png" alt="Avatar picture" />
+		  </div>
+		</nav>
+	  </header>
+	  <section class="center">
+		<div class="img-container">
+			<img class="prev-icon" src="./images/icon-previous.svg" alt="Previous icon">
+			  <img id="main-image" class="product-img" src="./images/image-product-1.jpg" alt="Product img" />
+			  <img class="next-icon" src="./images/icon-next.svg" alt="Next icon">
+		  
+		 <div class="thumbnail-container">
+			<img src="./images/image-product-1-thumbnail.jpg" class="thumbnail" alt="Thumbnail 1" data-large="./images/image-product-1.jpg">
+			<img src="./images/image-product-2-thumbnail.jpg" class="thumbnail" alt="Thumbnail 2" data-large="./images/image-product-2.jpg">
+			<img src="./images/image-product-3-thumbnail.jpg" class="thumbnail" alt="Thumbnail 3" data-large="./images/image-product-3.jpg">
+			<img src="./images/image-product-4-thumbnail.jpg" class="thumbnail" alt="Thumbnail 4" data-large="./images/image-product-4.jpg">
+		</div>
+		   <div class="cart-container">
+	
+			</div> 
+		</div>
+		<!-- modal -->
+		<div class="modal-gallery" id="modal-gallery">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <div class="modal-image-container">
+      <img id="modal-main-image" src="./images/image-product-1.jpg" alt="Modal product img">
+      <img class="modal-prev" src="./images/icon-previous.svg" alt="Previous icon">
+      <img class="modal-next" src="./images/icon-next.svg" alt="Next icon">
+    </div>
+    <div class="modal-thumbnail-container">
+      <img src="./images/image-product-1-thumbnail.jpg" class="modal-thumbnail" alt="Thumbnail 1" data-large="./images/image-product-1.jpg">
+      <img src="./images/image-product-2-thumbnail.jpg" class="modal-thumbnail" alt="Thumbnail 2" data-large="./images/image-product-2.jpg">
+      <img src="./images/image-product-3-thumbnail.jpg" class="modal-thumbnail" alt="Thumbnail 3" data-large="./images/image-product-3.jpg">
+      <img src="./images/image-product-4-thumbnail.jpg" class="modal-thumbnail" alt="Thumbnail 4" data-large="./images/image-product-4.jpg">
+    </div>
+  </div>
+</div>
+		<article class="product-section">
+		<div class="product-desc">
+		  <p class="company-title">SNEAKER COMPANY</p>
+		  <h3 class="sneaker-title">Fall Limited Edition Sneakers</h3>
+		  <p class="sneaker-desc">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+		<div class="product-price">
+		<div class="price-div">
+		  <h3 class="price">$125.00</h3>
+		  <h2 class="discount">50%</h2>
+		</div>
+		  <p class="regular-price">$250.00</p>
+		</div>
+		</div>
+		<div class="add-to-cart">
+		<div class="quantity-btn">
+		  <img class="decrease-quantity" src="./images/icon-minus.svg" alt="Minus icon" />
+		  <p class="quantity">0</p>
+		  <img class="increase-quantity" src="./images/icon-plus.svg" alt="Plus icon" />
+		</div>
+		<div class="add-to-cart-btn">
+			<img src="./images/icon-cart.svg" alt="Cart icon" />
+			<p>Add to cart</p>
+		</div>
+		</div>
+		</article>
+	  </section>
+	  <div class="open-modal"></div>
+	</main>
+  <script src="script.js"></script>
+</body>
+</html>
